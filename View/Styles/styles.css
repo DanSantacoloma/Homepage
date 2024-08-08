@@ -1,0 +1,414 @@
+body {
+    background-image: url('../../Startpage/images/bg.png');
+    background-size: cover;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@font-face {
+    font-family: 'mexcellentrg';
+    src: url('../../Startpage/Fonts/mexcellentrg.otf') format('opentype');
+}
+
+
+
+#Header {
+    width: 65%;
+    height: 20dvh;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+#Header h1 { 
+    font-family: 'mexcellentrg';
+    font-size: 10dvh;
+    font-weight: normal;
+    margin-top: 4dvh;
+    color: pink;
+}
+
+#Content {
+    display: flex;
+    width: 70%;
+    height: 65dvh;
+}
+
+
+#LeftC, #CenterC, #RightC {
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+}
+
+#Work {
+    width: 100%;
+    height: 33%;
+    display: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid pink;
+    margin-bottom: 7%;
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.7);
+    
+}
+
+#Wheader {
+    width: 70%;
+    height: 25%;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid pink;
+    margin-top: -6%;
+    margin-left: 5%;
+    display: flex;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.7);
+    
+}
+
+#Wheader h2, #Ch H2, #SH H2 {
+    font-family: 'mexcellentrg';
+    font-size: 3.5dvh;
+    font-weight: normal;
+    color: pink;
+    margin-left: 5%;
+    margin-top: auto;
+    /* animation: glow 1s ease-in-out infinite alternate; */
+}
+
+@keyframes glow {
+25% {
+        text-shadow: 0 0 2px pink, 0 0 4px pink, 0 0 6px pink, 0 0 8px pink;
+    }
+    100% {
+        text-shadow: 0 0 4px pink, 0 0 8px pink, 0 0 12px pink, 0 0 16px pink;
+    }
+}
+
+#Wcontainer, #Ccont, #Scont { 
+    width: 100%;
+    display: flex;
+
+}
+
+#Wcontainer ul, #Ccont ul, #Scont ul {
+    list-style: none;
+    padding-top: 5%;
+
+}
+
+#Ccont ul{
+    padding-right: 4%;
+}
+
+#Wcontainer li, #Ccont li, #Scont li {
+    margin-top: 5%;
+    display: flex;
+    align-items: center; /* Ensure items are aligned centrally */
+}
+
+/* Optional: if items inside the li need alignment, adjust here */
+#Wcontainer li a, #Ccont li a, #Scont li a {
+    line-height: 1.5; /* Adjust based on font-size for better vertical alignment */
+}
+
+#Wcontainer ul li, #Ccount ul li {
+    
+    margin-right: 20px; /* Adjust the value to control space between columns */
+}
+
+/* Remove right margin from the last item in each row */
+#Wcontainer li:last-child, #Ccount li:last-child {
+    margin-right: 0;
+}
+
+#Wcontainer li:hover, #Scont li:hover, #Ccont li:hover{
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+#Wcontainer ul a, #Ccont ul a, #Scont ul a {
+    font-family: 'mexcellentrg';
+    color: white;
+    font-size: 100%;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+
+#Chill {
+    border: 2px solid pink;
+    width: 100%;
+    height: 33%; /* Set width to one-third of the parent width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: column;
+    box-shadow: 5px;
+    margin-bottom: 2%;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.7);
+}
+
+#Ch {
+    width: 70%;
+    height: 25%;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid pink;
+    margin-top: -5%;
+    margin-left: 5%;
+    display: flex;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.7);
+}
+
+#Ccont li:hover {
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+#Ccont ul a {
+    font-family: 'mexcellentrg';
+    color: white;
+    font-size: 100%;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#SN {
+    border: 2px solid pink;
+    width: 100%;
+    height: calc(100%/3); /* Set width to one-third of the parent width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 5%;
+    display: column;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.7);
+}
+
+#SH {
+    width: 70%;
+    height: 25%;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid pink;
+    margin-top: -5%;
+    margin-left: 5%;
+    display: flex;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.7);
+}
+
+#Date {
+    width: 100%;
+    height: 50%;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid pink;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.7);
+
+}
+
+
+#TopDate {
+    width: 100%;
+    height: 30%;
+    margin-top: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+#TopDate h2 {
+    font-family: 'mexcellentrg';
+    font-size: 4dvh;
+    color: pink;
+    padding-top: 5%;
+    
+}
+
+#TopDate h3 {
+    font-family: 'mexcellentrg';
+    color: white;
+    font-weight: normal;
+}
+
+#BotDate {
+    width: 100%;
+    height: 55.5%;
+    justify-content: center;
+    
+}
+
+#BotDate ul {
+    display: flex;
+    flex-direction: column; /* Stack items vertically if you have multiple items */
+    padding-top: 5%;
+    list-style: none; /* Remove default list styling */
+    margin: 0;
+    padding-left: 20%;
+}
+
+#BotDate li {
+    display: flex;
+    align-items: center; /* Align items vertically center */
+    margin-bottom: 10px; /* Adjust spacing between items */
+}
+
+#BotDate img {
+    width: 10%; /* Adjust as needed */
+    margin-right: 10px; /* Space between image and text */
+}
+
+#BotDate h5 {
+    font-family: 'mexcellentrg';
+    color: white;
+    font-weight: normal;
+    margin: 0; /* Remove default margin to align perfectly */
+}
+
+
+#BotDate #chileFlag{
+    width: 12.7%;
+    margin-right: -0.1%;
+}
+
+#empty {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid pink;
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.7);
+}
+
+#empty iframe {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#Search {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid pink;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.7);
+}
+
+#Search img {
+    width: 20%;
+    margin-left: 5%;
+}
+
+#Search input {
+    margin-left: 2%;
+    border: 2px solid pink;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgba(255, 192, 203, 0.5);
+    color: white;
+    min-width:27.5vh;
+    min-height: 2vh;
+}
+
+#Search input::placeholder {
+    color: white;
+}
+
+#List {
+    width: 100%;
+    height: 80%;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid pink;
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.7);
+}
+
+#List h2 {
+    font-family: 'mexcellentrg';
+    font-size: 3dvh;
+    color: pink;
+    position: relative;
+    margin-inline: auto;
+}
+
+#List #NewTaskButton {
+    font-family: 'mexcellentrg';
+    font-size: 2dvh;
+    color: pink;
+    height: 55%;
+    margin-top: 2.5%;
+    margin-left: 33%;
+    border-radius: 5px;
+    border: 2px solid pink;
+    background-color: black;
+    cursor: pointer;
+    padding-bottom: 5%;
+}
+
+
+#UList {
+    flex: 1;
+    height: 70%;    /*Setting the height in pixels avoids the UList to enlarge when the Todo list gets too large*/
+    max-width: 77%;
+    max-height: 70vh;
+    margin-left: 11%;
+    margin-bottom: 5%;
+     /*background-color: rgba(255, 192, 203, 0.5); */
+    /* border: 2px solid pink; */
+    /* border-radius: 5px; */
+    /* scrollbar-color: pink rgba(0, 0, 0, 0.7);*/
+    
+}
+
+.custom-scroll {
+    overflow: auto;
+    scrollbar-color: pink rgba(0, 0, 0, 0.7);
+    scrollbar-width: thin;
+    border-radius: 10px;
+}
+.custom-scroll::-webkit-scrollbar {
+    width: 7px;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+}
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+    background: darkred; /* Change hover color to distinguish from normal state */
+}
+.custom-scroll::-webkit-scrollbar-track {
+    background: #e6e6e6;
+    border-radius: 10px;
+}
+
+.editTaskLink.list-group-item.list-group-item-action.flex-column.align-items-start  {
+    border-radius: 0px;
+    border: 0.3vh solid rgba(0, 0, 0, 0.7);
+}
+
+.fade-out {
+    opacity: 1;
+    transition: opacity 0.5s ease-out; /* Duration of the fade effect */
+}
+
+.fade-out.hidden {
+    opacity: 0; /* Fade to transparent */
+}
+
+
+
+
+
+
+
+

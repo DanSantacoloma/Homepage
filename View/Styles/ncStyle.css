@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('../../Startpage/images/nt4.jpg');
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+@font-face {
+    font-family: 'mexcellentrg';
+    src: url('../../Startpage/Fonts/mexcellentrg.otf') format('opentype');
+}
+
+.container-fluid {
+    max-width: 250px;
+    /* Adjust to fit your window size */
+    height: 170px;
+    /* Adjust to fit your window size */
+    overflow-y: auto;
+    /* Adds scroll if content overflows */
+    border: 2px, solid, pink;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container-fluid label{
+    font-family: 'mexcellentrg';
+    color: white;
+}
+
+.form-control,
+.btn {
+    font-size: 0.875rem;
+    /* Smaller font size to fit better */
+}

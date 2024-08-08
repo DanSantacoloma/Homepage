@@ -1,0 +1,51 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url('../../Startpage/images/nt2.gif');
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+@font-face {
+    font-family: 'mexcellentrg';
+    src: url('../../Startpage/Fonts/mexcellentrg.otf') format('opentype');
+}
+
+.container label{
+    font-family: 'mexcellentrg';
+    color: white;
+}
+
+.container.m-3 {
+    border: 2px solid pink;
+    border-radius: 5px;
+    width: 800px; /* Fixed width */
+    height: 600px; /* Fixed height */
+    overflow: auto; /* Handle overflow inside the container */
+    position: relative; /* Ensure container can be positioned */
+}
+
+.form-control.full-width.mb-3 {
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding and borders are included in the total width */
+}
+
+/* Ensure .container-steps has proper styles */
+.container-steps {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Center the .step container */
+.step {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin-bottom: 10px; /* Optional: Add space between steps */
+}
+
+/* Optional: Ensure full-width input styles */
+.form-control.full-width {
+    width: 100%;
+    max-width: 400px; /* Optional: Set a max-width for better control */
+}
